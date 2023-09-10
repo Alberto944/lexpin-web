@@ -1,0 +1,26 @@
+*{
+    /*background-color: rgb(17, 17, 117);*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    color: rgb(37, 116, 6);
+    /*el tamaño de la letra*/
+    font-size: 25px;
+    /*el grueso de la letra*/
+    font-weight: bold;
+    /*el estili de la letra*/
+    font-family: 'Roboto', sans-serif;
+    /*la aliniacion de el texto*/
+    text-align: center;
+    /*decoracion de texto (estilos de lineas)*/
+    /*text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: red;
+    text-decoration-thickness: 5px;*/
+    /*resumen del text decoratio*/
+    text-decoration: underline dotted red 8px;
+}
+
