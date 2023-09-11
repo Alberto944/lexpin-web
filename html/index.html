@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albertsdg Rest.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <ul>
+        <ul id="BarradeNavegacion">
             <li id="aqui-inicio">Inicio</li>
             <li>Comidas</li>
             <li>Contacto</li>
         </ul>
-        <img src="image/albertsdg rest..png" alt="el Logo" width="150px">
+        <img class="Logo" src="image/albertsdg rest..png" alt="el Logo" width="150px">
         
     </nav>
     <main>
@@ -35,11 +36,23 @@
             <h2>Comidas</h2>
             <ul>
                 <li>
-                    <h3>Lomo de res</h3>
-                    <img src="" alt="">
+                    <h3>Filet de Res</h3>
+                    <img src="https://www.la-viande.fr/sites/default/files/styles/slider_recettes/public/recettes/images/Filet-de-b%C5%93uf-grill%C3%A9-en-marinade-rugissante%2C-pur%C3%A9e.jpg?itok=RNQ84b9-" width="200px" alt="plato 1">
                 </li>
-                <li></li>
-                <li></li>
+
+                <br>
+
+                <li>
+                    <h3>Milanesa de Pollo</h3>
+                    <img src="" width="200px" alt="plato 2">
+                </li>
+
+                <br>
+                    
+                <li>
+                    <h3>Salmon en Salsa</h3>
+                    <img src="" width="200px" alt="plato 3">
+                </li>
             </ul>
 
     </section>
@@ -54,9 +67,12 @@
             <br>
             <label for="inputApellido">Apellido</label>
             <input type="text" name="Apellido" placeholder="Ingrese su Apellido" id="inputAperllido">
+            
             <br>
             <label for="inputEmail">Correo Electronico</label>
             <input type="email" name="email" placeholder="Ingrese un Email" id="inputEmail">
+
+            <br>
             <input type="submit" value="enviar">
         </form>
         <br>
