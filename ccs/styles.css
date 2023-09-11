@@ -22,5 +22,40 @@ p{
     text-decoration-thickness: 5px;*/
     /*resumen del text decoratio*/
     text-decoration: underline dotted red 8px;
+    text-transform: capitalize;
+    text-indent: 20px;
+    
+
+    /*separa cada palabra 10 pixeles*/
+    word-spacing: 10px;
+    
 }
 
+a{
+
+}
+
+ul{
+    /*para cambiar los puntos de una lista*/
+    list-style:georgian;
+}
+
+span{
+    /*para hacer una sombra - eje X, eje Y, difuminado */
+    text-shadow: 5px 5px 5px red;
+}
+
+/* TAMAÑOS */
+article{
+    background-color: blue;
+    /*alture*/
+    height: 300px;
+    /*anchura*/
+    width: 250px;
+}
+
+main{
+    width: 300px;
+    height: 100px;
+    background-color: black;
+}

@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*unidad de medida vw vh
+
+vw (viwport width)
+vh (viwport height)
+viwport= el tamaño de mi ventana del navegador
+wodth= el ancho
+height= el alto de la ventana
+
+*/
+
+main{
+    /* la anchura los numero es el porcetaje del tamaño de la pagina, puede ser mas de 100% de la pagina para scrolear*/
+   /* width: 80vw;
+    /* la altura los numero es el porcetaje del tamaño de la pagina, puede ser mas de 100% de la pagina para scrolear*/
+    height: 50vh;
+    /*background-color: aqua;*/
+}
+
+/*llamando una etiqueta por Padre e Hijo*/
+main section{
+    /*el tamaño que le asigno a el parrafo en la etiqueta padre del parrafo*/
+    font-size: 30px;
+    width: 100%;
+    height: 20%;
+    background-color: brown;
+
+}
+
+/*main div{
+    width: 80%;
+    height: 300px;
+    background-color: yellow;
+}*/
+/*el hijo de main y el hijo*/
+main section p{
+    font-size: 1.5em;
+}
+
+/*badground Fondos*/
+
+main{
+    background-color: rgb(67, 235, 67);/* de 0 a 255*/
+    background-image: url();
+    background-repeat: no-repeat;
+
+}
+
