@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-size: border-box;
+}
+
+
+nav{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+}
+
+nav section:nth-child(1){
+    width: 10%;
+    height: 80%
+}
+nav section:nth-child(2){
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav section:nth-child(3){
+    width: 12%;
+    height: 80%
+}
+nav section:nth-child(2) input{
+    width: 60%;
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(194, 194, 201);
+    /*sombrede la barra*/
+    width: 10px;
+}  
+
+nav #buscar{
+    width: 400px;
+    height: 10px;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+.buttMenu{
+    border-radius: 50%;
+    border: none;
+    padding: 7px;
+}
+#butLupa{
+    border-radius: 10px 30px 30px 10px;
+    border: none;
+}
+
+#perfil1{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 2px 2px; 
+    border: none;
+}
+
+#perfil{
+    border-radius: 10px 30px 30px 10px;
+    border: none;
+
+}
+#imgPerfil{
+    border-radius: 30px 30px 30px 30px;
+}
+
+nav .buttMenu:hover{
+    background-color: rgba(235, 234, 234, 0.986);
+}
+
+#navSecun{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    left: 250px;
+    z-index: 3;
+    gap: 20px;
+}
+
+#navSecun .bottonNavSecun{
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    padding: 10px;
+
+}
+
+#navSecun .bottonNavSecun:hover{
+    background-color: rgba(235, 234, 234, 0.986);
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+aside{
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    overflow-y: scroll;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 4;
+
+}
+
+aside .sect{
+    width: 90%;
+    background-color: white;
+    
+  }
+
+aside ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+  }
+
+aside li{
+    width: 90%;
+}
+
+aside li:hover{
+    background-color: rgba(240, 240, 240, 0.986);
+    border-radius: 5px 5px 5px 5px;
+}
+
+aside hr{
+    width: 90%;
+    height: 1px;
+    background-color: rgb(180, 171, 171);
+    opacity: 0.3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main{
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    padding-left: 19%;
+    padding-top: 125px;
+
+}
+
+main div{
+    width: 100%;
+    background-color: white;
+}
+
+.imagVid{
+    border-radius: 20px;
+    width: 270px;
+}

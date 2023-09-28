@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GRID ----> GRILLAS*/
+/* display: grid; */
+
+main{
+    display: grid;
+    /*grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 300px 300px;
+    
+    row-gap: 20px;
+    column-gap: 10px;
+    */
+    grid-template-areas: 'nav nav nav nav'
+                         'section section section aside'
+                         'footer footer footer footer';
+    height: 100vh;
+    background-color: black;
+}
+
+main nav{
+    grid-area: nav;
+    background-color: yellow;
+}
+
+main section{
+    grid-area: section;
+    background-color: green;
+}
+
+main aside{
+    grid-area: aside;
+    background-color: blue;
+}
+
+main footer{
+    grid-area: footer;
+    background-color: pink;
+}
+
+/*main div{
+    background-color: red;
+}*/

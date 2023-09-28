@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(184, 96, 96);
+    color: white;
+    overflow-x: none;
+    
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    display: flex;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    
+
+}
+
+nav select:nth-child(1){
+    width: 10%;
+    height: 80%;
+
+}
+
+nav select:nth-child(2){
+    width: 50%;
+    height: 80%;
+    
+}
+
+nav select:nth-child(3){
+    width: 10%;
+    height: 80%;
+    
+}
+
+nav section:nth-child(2){
+    background-color: white;
+
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(194, 194, 201);
+    /*sombrede la barra*/
+    width: 10px;
+}
+#logoYoutube{
+    width: 120px;
+}
+
+nav #buscar{
+    /*margin: 202px;*/
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+nav .butMenu{
+    border-radius: 20px;
+}
+
+nav .butMenu1{
+    border-radius: 20px;
+    
+
+}
+
+.imagVid{
+    border-radius: 20px;
+    width: 270px;
+}
+
+#mainSecundario{
+    display: grid;
+    grid-template-columns: repeat(4,10fr);
+    background-color: rgb(15, 1, 1);
+    color: white;
+    padding: 20px;
+    column-gap: 20px;
+    row-gap: 40px;
+    border-radius: 0px 0px 0px 50px ;
+}
+
+
+/*para que cuando se despliege el menu tome esas medidas, debo agregar otra imagen para cubrir los espacios y cuando este en desplegado debe estar oculta y cuando este en no desplegado debe aparecer y ocuipar su espacio
+
+#mainSecundario{
+    display: grid;
+    grid-template-columns: repeat(3,10fr);
+    background-color: rgb(15, 1, 1);
+    color: white;
+    padding: 20px;
+    row-gap: 40px;
+    border-radius: 0px 0px 0px 50px ;
+}*/
+
+#mainPrincipal{
+    display: grid;
+    grid-template-areas: 'nav nav nav'
+                         'aside main main'
+                         'footer main main';
+    height: 100vh;
+}
+
+#mainPrincipal aside{
+    grid-area: aside;
+    /*background-color: rgb(167, 137, 40);*/
+}
+#mainPrincipal nav{
+    grid-area: nav;
+    /*background-color: rgb(65, 177, 80)*/;
+}
+#mainPrincipal main{
+    grid-area: main;
+    /*background-color: rgb(11, 12, 12);*/
+}
+#mainPrincipal footer{
+     grid-area: footer;
+    /*background-color: rgb(18, 131, 131);*/
+}
+
+aside {
+    position: fixed;
+    left: 0px;
+    width: 200px;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+/*aside footer{
+    
+}
+svg{
+    path: fill="white"
+}

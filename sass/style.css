@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* comentario*/
+main {
+  width: 500px;
+  height: 500px;
+  background-color: yellow;
+  color: white;
+}
+main:hover {
+  background-color: red;
+}
+main h1 {
+  font-size: 30px;
+}
+main p {
+  color: purple;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

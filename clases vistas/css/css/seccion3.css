@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* POSICIONES */
+/*
+STATIC 
+
+RELATIVE
+ABSOLUTE
+
+FIXED
+STICKY
+
+*/
+
+/*#div{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(0, 217, 255);
+    margin-top: 200px;
+    left: 250px;
+    z-index: 3;
+}
+
+#div article{
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+main{
+    width: 300px;
+    height: 500px;
+    background-color: green;
+    position: fixed;
+    top: 20px;
+    left: 200px;
+    z-index: 4;
+}
+
+section{
+    background-color: blue;
+    height: 2000px;
+}
+
+section section{
+    background-color: red;
+    height: 500px;
+}
+
+section div{
+    background-color: violet;
+    height: 500px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}*/
+
+/* Z-INDEX ----> CONTROLAR EL EJE Z  = profundidad */
+
+main,article,div{
+    width: 200px;
+    height: 200px;
+
+}
+main{
+    background-color: red;
+    position: absolute;
+    z-index: 10;
+    
+}
+
+div{
+    background-color: yellow;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 11;
+}
+
+article{
+    background-color: green;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 12;
+}
+/*
+
+Crear un Nav que este fijo en la pantalla asi yo haga scroll
+Crear un contenido principal que ocupe el 100vh
+Crear una seccion que ocupe el 100vh
+crear un footer
+
+*/

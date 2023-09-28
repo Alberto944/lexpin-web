@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* TRANSFORMACIONES */
+
+div{
+    width: 300px;
+    height: 200px;
+    background-color: green;
+    /*transform: translate(200px,200px);*/
+    /*transform: scale(0.5,0.5);  1 = Escala real del elemento */
+    transform: rotate(0deg);
+    
+}
+
+/* TRANSICIONES */
+
+button{
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    /*transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 1s;*/
+    transition: all 1s linear;
+
+}
+
+button:hover{
+    background-color: red;
+}
+
+/* ANIMACIONES */
+
+
+section{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    animation-name: rotar;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotar{
+    0%{
+        transform: rotate(45deg);
+        transform: translate(20px,30px);
+        background-color: blue;
+    }
+    20%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        transform: rotate(134deg);
+        transform: translate(50px,60px);
+        background-color: yellow;
+    }
+}
+
+/* BOX-SIZING */
+
+/* OVERFLOW */
+main{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: coral;
+    overflow-y: hidden;
+}
+
+.container{
+
+    padding: 20px;
+}

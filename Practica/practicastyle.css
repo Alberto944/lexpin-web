@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin:0px;
+    
+    
+}
+
+#mainprin {
+    display: grid;
+    grid-template-areas: 'nav nav nav'
+                        'main main section'
+                        'hola hola hola'
+;
+
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    background-color: black;
+    color: aliceblue;
+
+}
+
+#imagenLogo{
+    /*position: absolute;*/
+    
+    /*margin-left: 1180px;
+    margin-top: 5px;
+    width: 4%;*/
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+
+
+main{
+    grid-area: main;
+    /*margin: 10vh;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    grid-area: section;
+    background-color: blueviolet;
+   
+
+}
+
+
+
+section .prod{
+   
+    background-color: red;
+
+}
+
+footer {
+    grid-area: hola;
+    display: flex;
+    background-color: burlywood;
+    height: 90px;
+}

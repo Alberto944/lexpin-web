@@ -1,0 +1,39 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+/* comentario*/
+//esto tambien es un comentario 
+
+//las variables en sass ( espacion en memoria)
+
+$variable : yellow
+
+//anidamienro (seleccion de la estructura de un elemento)
+
+main
+    width: 500px
+    height: 500px
+    background-color: $variable
+    color: white
+    &:hover
+        background-color: red
+    h1
+        font-size: 30px //tamaño de la letra
+    p
+        color: purple
+
+// los mixin (cojn y sin parametros; son fracmentos de codigos que pueden ser reutilizados)
+
+@mixin my-mixin($color)
+    padding: 10px 15px
+    border: none
+    border-radius: 20px
+    background-color: $color
+
+button
+    @include my-mixin(red)
+    
+
+

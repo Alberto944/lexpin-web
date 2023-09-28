@@ -1,0 +1,83 @@
+/* ESTO ES UN COMENTARIO */
+/* SELECTOR UNIVERSAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* SELECTORES */
+/* SELECTOR POR ETIQUETA*/
+/*p{
+    background-color: yellow;
+}*/
+/* SELECTOR POR ID*/
+#titulo-principal{
+    color: blueviolet;
+}
+/* SELECTOR POR CLASE class */
+.rojo{
+    color: red;
+}
+
+.verde{
+    color: green;
+}
+/* SELECTOR POR GRUPO */
+
+h5,h6{
+    background-color: blue;
+}
+
+#span1{
+    color: brown;
+}
+
+/* TEXTOS */
+p{
+    color: rgb(1, 186, 35);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    /*text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: red;
+    text-decoration-thickness: 10px;
+    text-decoration: underline dotted red 8px;
+    text-transform: uppercase;*/
+    text-decoration: none;
+    text-transform: capitalize;
+    text-indent: 20px;
+    letter-spacing: 5px;
+    line-height: 20px;
+    word-spacing: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+ul{
+  list-style: decimal;
+}
+
+span{
+    text-shadow: 5px -5px 10px red;
+}
+
+/* TAMAños */
+
+article{
+    background-color: blue;
+    width: 250px;
+    height: 300px;
+}
+
+main{
+    width: 300px;
+    height: 100px;
+    background-color: blueviolet;
+}

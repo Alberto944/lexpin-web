@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*background-color: black;
+    color: white;*/
+    /*overflow-x: none;*/
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0px 25px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /*background-color: black;*/
+}
+
+nav section:nth-child(1){
+    width: 10px;
+    height: 80%;
+    background-color: red;
+}
+
+nav section:nth-child(2){
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    
+}
+
+nav section:nth-child(3){
+    width: 10px;
+    height: 80%;
+    background-color: red;
+}
+
+nav section:nth-child(2) input{
+    background-color: black;
+    width: 80%;
+}
+
+aside{
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+}
+
+

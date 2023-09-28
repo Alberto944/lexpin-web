@@ -44,10 +44,24 @@ main section p{
 
 /*badground Fondos*/
 
-main{
-    background-color: rgb(67, 235, 67);/* de 0 a 255*/
-    background-image: url();
-    background-repeat: no-repeat;
+main {
+    /*background-color: rgb(67, 235, 67);/* de 0 a 255*/ 
 
+    /*el lineal gradient es para darle opacidad a la imagen*/
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVzltZlN8_1akUcbrfy3_g-PzXKyK7GHBECA&usqp=CAU"); 
+    background-repeat: no-repeat;
+    /*El tamaño que ocupa la imagen*/
+    background-size: cover;
+    /*La pocicion que ocupa la imagen*/
+    background-position: 50% 50%;
+    /*permite dejar el backgrand fijo o la imagen fija si se escrolea*/
+    background-attachment: fixed;
+
+}
+
+p:nth-child()
+button{
+    background-color: blue;
+    padding: 20px;
 }
 

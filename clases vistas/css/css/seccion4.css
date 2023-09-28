@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/*  DISPLAY ---> pantalla
+
+Hay elementos en BLOQUE (div,p,section,footer)
+Hay elementos en linea (a,img,span)
+
+*/
+
+p{
+    display: none; /* inline block*/
+}
+
+/* FLEXBOX */
+
+main{
+    /*  row = fila (Default) , column = columna  */
+    display: flex; /* FILA */
+    /*flex-wrap: wrap-reverse;*/
+    /*flex-direction: column; Controla la direccion*/
+    justify-content: center; /* Controlar el eje x*/
+    align-items: center; /* Controlar el eje Y*/
+    gap: 10px; /* Espaciado entre los elementos*/
+    height: auto;
+    background-color: black;
+}
+
+.rojo , .verde{
+    width: 70px;
+    height: 70px;
+}
+
+main .verde{
+    background-color: rgb(0, 255, 64);
+}
+
+main .rojo{
+    background-color: red;
+}
+
+nav{
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: blueviolet;
+}
+
+nav img{
+    width: 50px;
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+}

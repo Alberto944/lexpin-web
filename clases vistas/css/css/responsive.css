@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    height: 75px;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+nav p{
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+}
+
+nav input{
+    display: none;
+}
+
+nav input:checked ~ aside{
+    display: flex;
+}
+nav label{
+    z-index: 2;
+}
+nav label img{
+    width: 30px;
+}
+
+nav aside{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(119, 119, 119);
+}
+
+nav ul{
+    display: none;
+    list-style: none;
+    gap: 10px;
+    color: white;
+}
+
+/* RESPONSIVE DESIGN */
+
+/*@media (min-width: 768px){
+    nav ul{
+        display: flex;
+    }
+
+    nav label{
+        display: none;
+    }
+}*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    nav{
+        background-color: red;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    nav{
+        background-color: green;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+
+/*
+Actividad: (Recuerda usar las etiquetas semanticas!)
+
+1) Crear copia de pagina principal de Youtube (responsive).
+
+Extras:
+
+1) Haz que tu copia de Youtube al clickear un video, te lleve al mismo video en donde deben aparecer el titulo,descripcion, likes, comentarios y videos relacionados.
+
+2) Elige un personaje de tu preferencia, y hazle una pagina web. Deber cumplir con lo siguiente:
+
+- Debe tener un navbar (fijo). El menu con la lista de las secciones (ej: inicio,historia,habilidades, etc..), al dar click debe llevar a la seccion clickeada.
+- En la pagina principal tienen que colocar un fondo (video o imagen). Por delante de este debe ir el nombre del personaje, y una foto del mismo (Este debe realizar algun movimiento epico).
+- Crear una seccion hablando un poco del personaje (historia).
+- Crear una seccion de sus poderes o fortalezas, cada una de estas deben ir en una carta.
+- Debera tener un footer (con informacion del creador de la pagina).
+- La pagina debera tener un glitch al principio.
+- EXTRA: (La pagina debe ser responsive)
+
+
+*/
