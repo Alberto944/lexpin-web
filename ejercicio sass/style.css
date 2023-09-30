@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 50px;
+  background-color: green;
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+nav ul {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  color: white;
+}
+
+main {
+  padding: 10px 10px 10px 10px;
+  padding-top: 80px;
+  padding-right: 300px;
+  height: 95.2vh;
+  background-color: white;
+}
+main h1 {
+  margin-left: 20px;
+}
+main h4 {
+  padding-top: 50px;
+  padding-inline: 60px;
+}
+main div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  padding: 0px;
+  gap: 20px;
+}
+main div #img1 {
+  margin: 40px 0px 0px 30px;
+}
+main div #img2 {
+  margin: 40px 0px 0px 430px;
+}
+main div #img3 {
+  margin: 40px 0px 0px 830px;
+}
+
+.main {
+  background-color: white;
+}
+.main__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding-left: 5px;
+  padding-top: 25px;
+  margin-left: 40px;
+}
+.main__section--Text {
+  font-size: 40px;
+}
+
+aside {
+  position: fixed;
+  width: 250px;
+  height: 95.2vh;
+  background-color: black;
+  color: white;
+  padding: 60px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px 0px 0px 1190px;
+  top: 0;
+}
+
+.aside {
+  background-color: black;
+}
+.aside__tex {
+  font-size: 26px;
+  color: white;
+}
+.aside__boton {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: green;
+}
+.aside__boton--cancelar {
+  background: red;
+}
+.aside__boton--aceptar {
+  background: green;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

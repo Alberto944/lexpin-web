@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* comentario*/
+/* COMENTARIO */
 main {
   width: 500px;
   height: 500px;
@@ -30,18 +30,18 @@ main p {
   align-items: center;
 }
 
-.cancelar {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 20px;
-  background-color: red;
-}
-
 .aceptar {
   padding: 10px 15px;
   border: none;
   border-radius: 20px;
   background-color: green;
+}
+
+.eliminar {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: red;
 }
 
 .header {
@@ -53,33 +53,18 @@ main p {
 }
 .header__boton, .boton-secundario {
   padding: 10px 20px;
-  color: whit;
+  color: white;
   border: none;
 }
 .header__boton--red {
-  background: red;
+  background-color: red;
 }
 .header__boton--green {
-  background: green;
+  background-color: green;
 }
 
 .boton-secundario {
   background-color: yellow;
-}
-
-h4 {
-  background-color: green;
-  color: white;
-}
-
-.boton-inicio {
-  color: blue;
-  padding: 10px 25px;
-}
-
-.boton-final {
-  color: green;
-  padding: 10px 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

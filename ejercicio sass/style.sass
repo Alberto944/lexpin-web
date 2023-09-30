@@ -1,0 +1,112 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+$variable1 : green
+$variable2 : black
+$medida : 100%
+$variable4 : red
+$variable5 : white
+$medida2: 95.2vh
+
+@mixin estilo-de-botones($color)
+    padding: 10px 15px
+    border: none
+    border-radius: 20px
+    background-color: $color
+
+@mixin flexBox($direction: column, $justify-content: flex-start, $align: center)
+    display: flex
+    flex-direction: $direction 
+    justify-content: $justify-content
+    align-items: $align
+
+nav
+    height: 50px
+    background-color: $variable1
+    color: $variable5
+    @include flexBox(row-reverse, space-between,)
+    padding: 20px
+    position: fixed
+    width: 100%
+    top: 0
+    left: 0
+    z-index: 5
+    ul
+        display: flex
+        gap: 60px
+        list-style: none
+        color: white
+
+    
+main
+    padding: 10px 10px 10px 10px
+    padding-top: 80px
+    padding-right: 300px 
+    height: $medida2
+    background-color: $variable5
+    h1
+        margin-left: 20px
+    h4
+        padding-top: 50px
+        padding-inline: 60px
+    div
+        @include flexBox(row, space-between,)
+        position: absolute
+        padding: 0px
+        gap: 20px
+        #img1
+            margin: 40px 0px 0px 30px            
+        #img2
+            margin: 40px 0px 0px 430px
+        #img3
+            margin: 40px 0px 0px 830px
+
+
+.main
+    background-color: $variable5
+    &__section
+        @include flexBox()
+        background-color: $variable5
+        color: $variable2
+        padding-left: 5px
+        padding-top: 25px
+        margin-left: 40px
+        &--Text
+            font-size: 40px //por que no me toma esto
+        
+
+aside
+    position: fixed
+    width: 250px
+    height: $medida2
+    background-color: $variable2
+    color: $variable5
+    padding: 60px 20px 20px 20px
+    @include flexBox()
+    margin: 0px 0px 0px 1190px
+    top: 0
+    
+
+
+.aside 
+    background-color: $variable2
+    &__tex
+        font-size: 26px
+        color: $variable5
+    &__boton
+        @include estilo-de-botones(green) //si yo le quiero dar el estilo pero no el color puedo hacer eso? se ve que no afecta pero para ahorrarme las lineas
+        &--cancelar
+            background: red
+        &--aceptar
+            background: green 
+
+footer
+    background-color: $variable2
+    color: $variable5
+    width: $medida
+    @include flexBox()
+   
+    
+    

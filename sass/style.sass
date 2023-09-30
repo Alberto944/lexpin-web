@@ -32,8 +32,94 @@ main
     border-radius: 20px
     background-color: $color
 
-button
-    @include my-mixin(red)
+    //predeterminado
+@mixin flexBox($direction:row, $justify:center, $align:center)
+    display: flex
+    flex-direction: $direction 
+    justify-content: $justify
+    align-items: $align
+
+.section
+    height: 400px
+    background-color: blue
+    //@include flexBox(column, center, center)
+    @include flexBox(column)
     
 
+.cancelar
+    @include my-mixin(red)
+    
+.aceptar
+    @include my-mixin(green)
+    
+//BEM (BLOCK,ELEMENT,MODIFIER)
+
+.header
+    background-color: gray
+    &__titulo
+        font-size: 26px
+        color: white
+    &__boton
+        padding: 10px 20px
+        color: whit
+        border: none
+        &--red
+            background: red
+        &--green
+            background: green
+        
+// @extend -----> nos permite reutilizar estilis de otros delectores
+
+.boton-secundario
+    background-color: yellow
+    @extend .header__boton
+
+// Condicionales @if (si se cumple la condicion) @else (si el if no se cumple la condicion)
+// @else if (otra condicion)
+
+// Operadores: 
+//==  (igualdad) por ej : 1 == 1
+//!= (desigualdad) por ej : 2 != 3
+//> (operador de mayor) por ej : 3 > 5
+//< (operador de menor) por ej : 5 < 6
+//>= (mayor o igual) por ej : 18 >=18
+//<= (menor o igual) por ej : 10<=10
+
+$condicion : 5
+$propiedad : 'background-color'
+$color-green : green
+
+h4
+    @if $condicion > 4
+        #{$propiedad}: $color-green
+    @else if 6 == 3
+        background-color: yellow
+    @else if 4 != 3
+        background-color: black
+    @else
+        background-color: red
+
+    @if $condicion != 5
+        color: blue
+    @else 
+        color: white
+
+
+
+// INTERPOLAR #{la propiedad ejemplo arriba} para selector o propiedad
+         
+@mixin boton($nombre, $propiedad, $valor1,$propiedad2,$valor2)
+    .boton-#{$nombre} //boton-inicio
+        @if $propiedad == color
+            #{$propiedad} : $valor1 //resultado de si se cumple la condicion
+            //color : blue
+        @else
+            color: blue
+        @if $propiedad2 == padding
+            #{$propiedad2}: $valor2 //paddin : 10px 25px
+        @else 
+            padding: 20px 30px
+
+@include boton('inicio' , backgrand-color , red ,padding ,10px 25px )
+@include boton('final' , color , green ,padding ,10px 25px )
 
