@@ -82,4 +82,69 @@ h4 {
   padding: 10px 25px;
 }
 
+.division-1 {
+  width: 100px;
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+.division-2 {
+  width: 100px;
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+.division-3 {
+  width: 100px;
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: green;
+}
+
+.division-4 {
+  width: 100px;
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+.division-5 {
+  width: 100px;
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.primario-tema {
+  background-color: blue;
+}
+
+.secundario-tema {
+  background-color: green;
+}
+
+.resaltado-tema {
+  background-color: yellow;
+}
+
+.contenedor {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to left, orange, green);
+}
+
 /*# sourceMappingURL=style.css.map */

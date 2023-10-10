@@ -1,0 +1,83 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: sans-serif
+
+$main-bckg : 'https://www.apple.com/v/iphone-15-pro/a/images/meta/iphone-15-pro_overview__f8jz7aagka2q_og.png?202309290413'
+
+$ip15-bckg : 'https://www.apple.com/v/iphone-15/a/images/meta/iphone-15_overview__gm0jynt55aai_og.png?202309211525'
+
+$watch-bckg : 'https://www.apple.com/newsroom/images/2023/09/apple-introduces-the-advanced-new-apple-watch-series-9/tile/Apple-Watch-S9-hero-230912.jpg.og.jpg?202309261743'
+
+@mixin flexBox($direc:row,$jc:center,$ai:center,$gap:0px)
+    display: flex
+    flex-direction: $direc
+    justify-content: $jc
+    align-items: $ai
+    gap: $gap
+
+@mixin background-style($url:'',$color:black,$p1-x:center,$p1-y:center,$p2-x:center,$p2-y:center,$c-bkg:false)
+    @if $c-bkg == false
+        background-image: url($url),linear-gradient($color,$color)
+        background-position: $p1-x $p1-y, $p2-x $p2-y
+        background-repeat: no-repeat
+    @else 
+        background-color: $c-bkg
+
+@mixin letras($color:white,$size:16px,$weight:500,$txt-dec:none)
+    color: $color
+    font-size: $size
+    font-weight: $weight
+    text-decoration: $txt-dec
+    
+h1
+    @include letras($size:50px,$weight:bold)
+
+.h1-white
+    @include letras($color:black,$size:50px,$weight:bold)
+
+h3
+    @include letras($size:24px)
+  
+p
+    @include letras(gray,20px,bold)
+   
+a
+    @include letras(#2997ff,20px)
+    
+nav
+    @include background-style($c-bkg:white)
+    height: 40px
+    width: 100%
+    @include flexBox(row,center,center,20px)
+    padding: 0px 20px
+    position: fixed
+    top: 0
+    left:0
+    img
+        width: 24px
+    ul
+        @include flexBox($gap:15px)
+        list-style: none
+
+main
+    height: 730px
+    padding-top: 100px
+    background-color: wheat
+    @include flexBox(column,flex-start,center,10px)
+    @include background-style($main-bckg,black,center,200px)
+    color: white
+    
+.sec-general
+    height: 730px
+    padding-top: 100px
+    background-color: gray
+    @include flexBox(column,flex-start,center)
+    
+.sec-ip15
+    @include background-style($ip15-bckg,white,center,200px)
+    
+.sec-watch
+    @include background-style($watch-bckg,black,center,160px)
+    background-size: 78%, 100%

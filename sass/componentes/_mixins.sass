@@ -1,0 +1,14 @@
+// los mixin (cojn y sin parametros; son fracmentos de codigos que pueden ser reutilizados)
+
+@mixin my-mixin($color)
+    padding: 10px 15px
+    border: none
+    border-radius: 20px
+    background-color: $color
+
+    //predeterminado
+@mixin flexBox($direction:row, $justify:center, $align:center)
+    display: flex
+    flex-direction: $direction 
+    justify-content: $justify
+    align-items: $align

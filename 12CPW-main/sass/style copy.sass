@@ -1,0 +1,169 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+
+/* COMENTARIO */
+// ESTO TAMBIEN ES UN COMENTARIO
+
+// LAS VARIABLES EN SASS (ESPACIO EN MEMORIA)
+
+$colorPrincipal : yellow
+$tamanoPrincipal : 500px
+$fuentePrincipal : 30px
+$fuenteFamilia : 'sanserif'
+
+
+// ANIDAMIENTO (Seleccion de la estructura de los hijos de un elemento)
+main
+    width: $tamanoPrincipal
+    height: $tamanoPrincipal
+    background-color: $colorPrincipal
+    color: white
+    &:hover
+        background-color: red
+    h1
+        font-size: $fuentePrincipal
+    p
+        color: purple
+
+// LOS MIXIN (CON Y SIN PARAMETROS: SON FRAGMENTOS DE CODIGO QUE PUEDEN SER REUTILIZADO)
+
+@mixin my-mixin($color)
+    padding: 10px 15px
+    border: none
+    border-radius: 20px
+    background-color: $color
+
+@mixin flexBox($direccion:row,$justify:center,$align:center)
+    display: flex
+    flex-direction: $direccion
+    justify-content: $justify
+    align-items: $align
+
+.section
+    height: 400px
+    background-color: blue
+    //@include flexBox(column,center,center)
+    @include flexBox(column)
+.aceptar
+    @include my-mixin(green)
+
+.eliminar
+    @include my-mixin(red)
+
+
+//BEM (BLOCK,ELEMENT,MODIFIER)
+
+.header
+    background-color: gray
+    &__titulo
+        font-size: 26px
+        color: white
+    &__boton // .header__boton
+        padding: 10px 20px
+        color: white
+        border: none
+        &--red // .header__boton--red
+            background-color: red
+        &--green // .header__boton--green
+            background-color: green
+
+
+// @extend ----> nos permite reutilizar estilos de otros selectores
+
+.boton-secundario
+    background-color: yellow
+    @extend .header__boton
+
+// CONDICIONALES   @if (si se cumple la condicion) @else (Si en el if no se cumple la condicion)
+// @else if (otra condicion)
+
+// OPERADORES:
+// == (igualdad) por ej :   1 == 1
+// != (desigualdad) por ej : 2 != 3
+// > (operador de mayor) ej : 3 > 5
+// < (operador de menor) ej: 5 < 6
+// >= (mayor o igual) ej: 18 >= 18
+// <= (menor o igual) ej: 10 <= 10
+
+$condicion : 5
+$propiedad: 'background-color'
+$color-green: green
+$selector: 'h4'
+
+#{$selector} //h4
+    @if $condicion == 5
+        #{$propiedad}: $color-green
+    @else if 3 != 3
+        background-color: yellow
+    @else if 4 != 4
+        background-color: black
+    @else
+        background-color: red
+
+    @if $condicion != 5
+        color: blue
+    @else 
+        color: white
+
+
+// INTERPOLAR
+
+@mixin boton($nombre,$propiedad1,$valor1,$propiedad2,$valor2)
+    .boton-#{$nombre} //.boton-inicio
+        @if $propiedad1 == color
+            #{$propiedad1} : $valor1 //color:red
+            //color : blue
+        @else
+            color: blue
+        @if $propiedad2 == padding
+            #{$propiedad2}: $valor2 // padding : 10px 25px
+        @else 
+            padding: 20px 30px
+
+@include boton('inicio',background-color,red,margin,10px 25px)
+@include boton('final',color,yellow,padding,50px 70px)
+
+
+// BUCLES
+
+//@for   ----------> 1 - 10  | 1 - 20 | 1 - 5
+
+@for $contador from 1 through 5
+    .division-#{$contador}
+        width: 100px
+        height: 200px
+        margin-bottom: 10px
+       
+        @if $contador == 3
+            background-color: green
+        @else 
+            background-color: red
+
+//@each -----------> nos permite recorrer una lista o un mapa
+$colors : red,green,blue
+
+@each $color in $colors
+    .bg-#{$color}   //------> .bg-red
+        background-color: $color
+
+// mapas (objeto)
+
+$temas : (primario:blue,secundario:green,resaltado:yellow)
+
+@each $nombre, $color in $temas
+    .#{$nombre}-tema  // ====> .primario
+        background-color: $color
+
+
+// FUNCIONES EN SASS -----> ES UNA CAJITA DE HERRAMIENTA QUE NOS RETORNA UN VALOR
+
+@function degradado($color1:black,$color2:black,$direction:to left)
+    @return linear-gradient($direction,$color1,$color2)
+
+.contenedor
+    width: 100%
+    height: 500px
+    background: degradado()

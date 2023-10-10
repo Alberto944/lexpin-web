@@ -67,4 +67,84 @@ main p {
   background-color: yellow;
 }
 
+h4 {
+  background-color: green;
+  color: white;
+}
+
+.boton-inicio {
+  color: blue;
+  padding: 20px 30px;
+}
+
+.boton-final {
+  color: yellow;
+  padding: 50px 70px;
+}
+
+.division-1 {
+  width: 100px;
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+.division-2 {
+  width: 100px;
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+.division-3 {
+  width: 100px;
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: green;
+}
+
+.division-4 {
+  width: 100px;
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+.division-5 {
+  width: 100px;
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.primario-tema {
+  background-color: blue;
+}
+
+.secundario-tema {
+  background-color: green;
+}
+
+.resaltado-tema {
+  background-color: yellow;
+}
+
+.contenedor {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to left, black, black);
+}
+
 /*# sourceMappingURL=style.css.map */

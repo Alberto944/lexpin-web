@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.h1-white {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+p {
+  color: gray;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a {
+  color: #2997ff;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav {
+  background-color: white;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+nav img {
+  width: 24px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+
+main {
+  height: 730px;
+  padding-top: 100px;
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  background-image: url("https://www.apple.com/v/iphone-15-pro/a/images/meta/iphone-15-pro_overview__f8jz7aagka2q_og.png?202309290413"), linear-gradient(black, black);
+  background-position: center 200px, center center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.sec-general {
+  height: 730px;
+  padding-top: 100px;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0px;
+}
+
+.sec-ip15 {
+  background-image: url("https://www.apple.com/v/iphone-15/a/images/meta/iphone-15_overview__gm0jynt55aai_og.png?202309211525"), linear-gradient(white, white);
+  background-position: center 200px, center center;
+  background-repeat: no-repeat;
+}
+
+.sec-watch {
+  background-image: url("https://www.apple.com/newsroom/images/2023/09/apple-introduces-the-advanced-new-apple-watch-series-9/tile/Apple-Watch-S9-hero-230912.jpg.og.jpg?202309261743"), linear-gradient(black, black);
+  background-position: center 160px, center center;
+  background-repeat: no-repeat;
+  background-size: 78%, 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
