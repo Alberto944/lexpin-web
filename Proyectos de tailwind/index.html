@@ -7,12 +7,35 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <nav>
-
+    <nav class="bg-cyan-950 h-[60px] w-[100%] absolute flex justify-between items-center ">
+        <section>
+            <button class="pt-[12px] pl-[20px] hover:bg-[rgb(15,23,42)] pl-[20px] h-[40px] w-[50px] rounded-full" id="perfil1"><img id="imgPerfil1" draggable="false" class="rounded-full  style-scope yt-img-shadow" alt="Imagen del avatar" height="32" width="32" src="https://yt3.ggpht.com/yti/ADpuP3PHqavRDxk5sG51iUYK7Ad1SuB0pJ5DHjo3S1W6iw=s88-c-k-c0x00ffffff-no-rj"></button>
+        </section>
+        <section>
+            <ul class="text-white gap-[20px] pr-[20px] right-0 flex">
+                <li>
+                    <Button class="hover:bg-[rgb(15,23,42)] h-[30px] w-[97px] rounded-md"><a class="font-sans text-[13px]   " href="">Aserca de mi</a></Button>
+                </li>
+                <li>
+                    <Button class="hover:bg-[rgb(15,23,42)] h-[30px] w-[97px] rounded-md"><a class="font-sans text-[13px]" href="">Experiencia</a></Button>
+                </li>
+                <li>
+                    <Button class="hover:bg-[rgb(15,23,42)] h-[30px] w-[97px] rounded-md"><a class="font-sans text-[13px]" href="">Trabajos</a></Button>
+                </li>
+                <li>
+                    <Button class="hover:bg-[rgb(15,23,42)] h-[30px] w-[97px] rounded-md"><a class="font-sans text-[13px]" href="">contactos</a></Button>
+                </li>
+            </ul>
+        </section>
 
     </nav>
-    <main class="bg-[url('image/fondo_de_portfolio.jpg')] bg-cover  h-screen">
-
+    <main class="bg-[url('image/fondo_de_portfolio.jpg')] bg-cover bg-center h-screen">
+        <section class="flex justify-center items-center">
+            <h1 class="pt-[250px] text-white font-sans text-[40px] sm:text-[50px] font-bold">Diseño,Front-end, Developer</h1>
+        </section>
+        <section flex justify-center items-center>
+            <h2 class="pt-[20px] pl-[60px] pr-[60px] text-white font-sans text-[20px] sm:text-[30px] sm:pl-[90px] font-bold">Conocimiento de html, css, sass, en proceso de aumentar mis conocimientos y explotar mis capacidades</h2>
+        </section>
     </main>
 </body>
 </html>
